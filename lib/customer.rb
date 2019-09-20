@@ -26,6 +26,6 @@ class Customer
   end
 
   def waiters
-    meals.map(&:waiter)
+    meals.map(&:waiter).uniq
   end
 end
